@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Anon</string>
+    <string name="username">    Username    </string>
+    <string name="password">    Password    </string>
+    <string name="reenter_password">ReEnter Password</string>
+    <string name="create_admin">Add Admin</string>
+    <string name="login">Login</string>
+
+</resources>

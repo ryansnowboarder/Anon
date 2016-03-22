@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/fragment_create_account_logo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/marginSize_large"
+        android:layout_marginLeft="@dimen/marginSize_large"
+        android:layout_gravity="center"
+        android:minWidth="200dp"
+        android:gravity="center"
+        android:src="@drawable/anon_logo"/>
+
+    <RelativeLayout
+        android:id="@+id/fragment_create_account_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/fragment_create_account_username"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/marginSize_large"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/marginSize_large"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textSize="@dimen/textSize_large"
+            android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789"
+            android:textColor="@color/black"
+            android:minWidth="200dp"
+            android:hint="@string/username"/>
+
+        <ImageView
+            android:id="@+id/fragment_create_account_username_mark"
+            android:layout_width="@dimen/imageSize_thumbnail"
+            android:layout_height="@dimen/imageSize_thumbnail"
+            android:layout_toRightOf="@id/fragment_create_account_username"
+            android:padding="@dimen/paddingSize_thumbnail"
+            android:src="@drawable/x_mark"/>
+
+
+        <EditText
+            android:id="@+id/fragment_create_account_password"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/marginSize_large"
+            android:layout_gravity="center"
+            android:layout_below="@id/fragment_create_account_username"
+            android:layout_marginTop="@dimen/marginSize_small"
+            android:layout_marginLeft="@dimen/marginSize_large"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textSize="@dimen/textSize_large"
+            android:textColor="@color/black"
+            android:minWidth="200dp"
+            android:hint="@string/password"/>
+
+        <ImageView
+            android:id="@+id/fragment_create_account_password_mark"
+            android:layout_width="@dimen/imageSize_thumbnail"
+            android:layout_height="@dimen/imageSize_thumbnail"
+            android:layout_below="@id/fragment_create_account_username"
+            android:layout_toRightOf="@id/fragment_create_account_password"
+            android:padding="@dimen/paddingSize_thumbnail"
+            android:src="@drawable/x_mark"/>
+
+        <Button
+            android:id="@+id/fragment_create_account_submit"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/marginSize_large"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/fragment_create_account_password"
+            android:layout_marginTop="@dimen/marginSize_small"
+            android:layout_marginLeft="@dimen/marginSize_large"
+            android:layout_marginRight="@dimen/marginSize_large"
+            android:text="Create"
+            android:textColor="@color/black"
+            android:background="@color/dark_red"
+            android:textSize="@dimen/textSize_large"
+            android:textAllCaps="false"
+            android:paddingTop="@dimen/paddingSize_normal"
+            android:paddingBottom="@dimen/paddingSize_normal"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
